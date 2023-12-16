@@ -1,5 +1,5 @@
 ARG REG_NAME
-FROM ${REG_NAME}/baseimages/node:15-alpine
+FROM ${REG_NAME}/base/node:15-alpine
 
 COPY . /src
 RUN cd /src && npm install
